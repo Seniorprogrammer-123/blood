@@ -1,0 +1,11 @@
+* {
+    background-color: red;
+}
+
+h1#appname {
+    font-size: 2em !important;
+}
+
+img {
+    width: 100%;
+}

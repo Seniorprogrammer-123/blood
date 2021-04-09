@@ -1,0 +1,20 @@
+
+.bg-component {
+    background-color: #54CDE2;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+input {
+    width: 100%;
+}
+
+.bg-component label {
+    color: white;
+}
+
+label {
+    font-size: 20px;
+    margin-bottom: 0px !important;
+    line-height: 40px;
+}

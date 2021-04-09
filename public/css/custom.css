@@ -1,0 +1,331 @@
+h1#appname {
+    font-size: 1.9em !important;
+    line-height: 50px;
+}
+
+#app {
+    padding: 0;
+}
+
+[class*="col-"] {
+    margin-bottom: 5px;
+}
+
+img#logo, img#mark {
+    width: 15%;
+}
+
+p.subitem {
+    font-size: 2em;
+}
+
+.bg-component {
+    background-color: #54CDE2;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+input, select {
+    width: 100%;
+    line-height: 40px;
+    height: 42px;
+    border-radius: 5px;
+}
+
+select {
+    padding-left: 20px;
+}
+
+.bg-component label {
+    color: white;
+}
+
+label {
+    font-size: 20px;
+    margin-bottom: 0px !important;
+    line-height: 40px;
+}
+
+.dni {
+    border-radius: 20px;
+    width: 100%;
+}
+
+
+@keyframes click-wave {
+  0% {
+    height: 40px;
+    width: 40px;
+    opacity: 0.35;
+    position: relative;
+  }
+  100% {
+    height: 200px;
+    width: 200px;
+    margin-left: -80px;
+    margin-top: -80px;
+    opacity: 0;
+  }
+}
+
+.option-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  top: 13.33333px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  transition: all 0.15s ease-out 0s;
+  background: #cbd1d8;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.5rem;
+  outline: none;
+  position: relative;
+  z-index: 1000;
+  background: #ffffff;
+}
+.option-input:hover {
+  background: #beeb45;
+}
+.option-input:checked {
+  background: #000000;
+}
+.option-input:checked::before {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  content: '✔';
+  display: inline-block;
+  font-size: 26.66667px;
+  text-align: center;
+  line-height: 40px;
+}
+.option-input:checked::after {
+  -webkit-animation: click-wave 0.65s;
+  -moz-animation: click-wave 0.65s;
+  animation: click-wave 0.65s;
+  background: #40e0d0;
+  content: '';
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+.option-input.radio {
+  border-radius: 50%;
+}
+.option-input.radio::after {
+  border-radius: 50%;
+}
+body {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: box;
+  background: #e8ebee;
+  color: #9faab7;
+  text-align: center;
+}
+
+body label {
+  display: block;
+  line-height: 40px;
+}
+
+label.splite-item {
+    display: inline-block;
+    margin-right: 20px;
+    width: 50px;
+}
+
+/*Styling Selectbox*/
+.dropdown {
+    width: 100%;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 0 2px rgb(204, 204, 204);
+    transition: all .5s ease;
+    position: relative;
+    font-size: 14px;
+    color: #474747;
+    height: 100%;
+    text-align: left;
+    margin-right: 20px;
+  }
+  .dropdown .select {
+      cursor: pointer;
+      display: block;
+      padding: 8px
+  }
+  .dropdown .select > i {
+      font-size: 13px;
+      color: #888;
+      cursor: pointer;
+      transition: all .3s ease-in-out;
+      float: right;
+      line-height: 20px
+  }
+  .dropdown:hover {
+      box-shadow: 0 0 4px rgb(204, 204, 204)
+  }
+  .dropdown:active {
+      background-color: #f8f8f8
+  }
+  .dropdown.active:hover,
+  .dropdown.active {
+      box-shadow: 0 0 4px rgb(204, 204, 204);
+      border-radius: 2px 2px 0 0;
+      background-color: #f8f8f8
+  }
+  .dropdown.active .select > i {
+      transform: rotate(-90deg)
+  }
+  .dropdown .dropdown-menu {
+      position: absolute;
+      background-color: #fff;
+      width: 100%;
+      left: 0;
+      margin-top: 1px;
+      box-shadow: 0 1px 2px rgb(204, 204, 204);
+      border-radius: 0 1px 2px 2px;
+      overflow: hidden;
+      display: none;
+      max-height: 250px;
+      overflow-y: auto;
+      z-index: 9
+  }
+  .dropdown .dropdown-menu li {
+      padding: 8px;
+      transition: all .2s ease-in-out;
+      cursor: pointer
+  } 
+  .dropdown .dropdown-menu {
+      padding: 0;
+      list-style: none
+  }
+  .dropdown .dropdown-menu li:hover {
+      background-color: #f2f2f2
+  }
+  .dropdown .dropdown-menu li:active {
+      background-color: #e2e2e2
+  }
+  .dropdown {
+      height: 38px;
+      vertical-align: middle !important;
+  }
+
+  /***/
+  .paciente label {
+      display: inline-block;
+      width: 100%;
+      line-height: 42px;
+  }
+
+  .paciente input[type=text] {
+      line-height: 40px;
+      border-radius: 5px;
+      text-indent: 20px;
+      border: none;
+  }
+  .paciente input[type=text]:focus {
+      outline: none;
+  }
+
+  /**
+  // Button Component
+  */
+
+button {
+    display: inline-block;
+    margin: 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 1px 1px 0px 2px rgba (0,0,0,0.3);
+    background: rgb(141,217,252);
+    cursor: pointer;
+}
+
+
+button:hover {
+    background: rgb(131, 240, 136);
+}
+
+.lightyellow {
+    background: #e1e356;
+}
+
+td, th {
+    padding: 5px !important;
+    line-height: 38px;
+} 
+
+.container {
+    display: block;
+    padding: 0 !important;
+}
+
+#appname {
+    padding: 0;
+    display: inline-block;
+    margin-right: 0;
+}
+
+.css-2b097c-container, .css-g1d714-ValueContainer, .css-1hb7zxy-IndicatorsContainer {
+    height: 38px;
+    box-sizing: border-box;
+    border: none;
+    line-height: 34px;
+}
+.css-2b097c-container:focus, .css-g1d714-ValueContainer:focus, .css-1hb7zxy-IndicatorsContainer:focus {
+    height: 38px;
+    box-sizing: border-box;
+    border: none;
+    line-height: 34px;
+}
+.css-1uccc91-singleValue {
+    top: 25px !important;
+}
+.css-1wa3eu0-placeholder {
+    top: 19px !important;
+}
+.css-2b097c-container:focus .css-1wa3eu0-placeholder {
+    top: 25px !important;
+}
+a.btn {
+    margin-bottom: 0;
+}
+.btn {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.k-scheduler-views {
+    display: none;
+}
+a.logo {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+a.logo:hover {
+    text-decoration: none;
+}
+td .btn {
+    width: 90px;
+    border-radius: 20px;
+}
+td a {
+    margin-top: 5px;
+}
+th, td {
+    text-align: center !important;
+}
